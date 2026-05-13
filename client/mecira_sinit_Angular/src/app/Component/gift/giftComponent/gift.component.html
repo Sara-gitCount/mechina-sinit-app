@@ -1,0 +1,77 @@
+<div class="page-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>סינון מתנות</h2>
+    
+    <div class="filter-group">
+      <label>חיפוש לפי שם</label>
+      <input placeholder="שם מתנה" type="text" #name>
+      <button (click)="GetGiftsByNameAsync(name.value)">חפש</button>
+    </div>
+    
+    <div class="filter-group">
+      <label>חיפוש לפי תורם</label>
+      <input placeholder="שם תורם" type="text" #donorName>
+      <button (click)="GetGiftsByDonorNameAsync(donorName.value)">חפש</button>
+    </div>
+    
+    <div class="sidebar-actions">
+      <button (click)="getAllGifts()">הצג הכל</button>
+      <button (click)="GetOrderByPrice_CategoryAsync()">מיון לפי מחיר וקטגוריה</button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <h1>המתנות שלנו</h1>
+    
+    @if(a==1 && listGift.length === 0){
+      <div class="empty-message">לא נמצאו מתנות</div>
+    }
+    
+    @if(a==1 && listGift.length > 0){
+      <div class="gifts-grid">
+        @for(g of listGift; track $index){
+          <div class="gift-card">
+            <img *ngIf="g.image" [src]="'assets/gift-images/' + g.image + '.jpg'" alt="{{ g.image }}" class="gift-image" (error)="onImageError($event)"/>
+            
+            <div class="gift-content">
+              <h3 class="gift-title">{{g.name}}</h3>
+              <p class="gift-desc">{{g.description}}</p>
+              <div class="gift-footer">
+                <span class="gift-price">₪{{g.price}}</span>
+                <span class="gift-category">{{g.categoryName}}</span>
+              </div>
+            </div>
+            
+            @if(all && loggedIn){
+              <button class="btn-add-cart" (click)="CreateOrderAsync(g.id)">הוספה לסל</button>
+            }
+          </div>
+        }
+      </div>
+    }
+    
+    @if(a==4){
+      @if(gift==null){
+        <div class="empty-message">לא נמצאו מתנות</div>
+      }
+      @else{
+        <div class="single-gift">
+          <div class="gift-card featured">
+            <img *ngIf="gift.image" [src]="'assets/gift-images/' + gift.image + '.jpg'" alt="{{ gift.image }}" class="gift-image" (error)="onImageError($event)"/>
+            
+            <div class="gift-content">
+              <h3 class="gift-title">{{gift.name}}</h3>
+              <p class="gift-desc">{{gift.description}}</p>
+              <div class="gift-footer">
+                <span class="gift-price">₪{{gift.price}}</span>
+                <span class="gift-category">{{gift.categoryName}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    }
+  </main>
+</div>

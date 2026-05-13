@@ -1,0 +1,39 @@
+<div class="form-container">
+  <div class="form-card">
+    <h2>{{ b ? 'עדכון תורם' : 'הוספת תורם' }}</h2>
+    
+    <form (ngSubmit)="onSubmit(+id.value,firstName.value,lastName.value,phone.value,email.value)">
+      
+      <div class="form-group">
+        <label>מזהה</label>
+        <input type="number" #id required [value]="donor?.id" [disabled]="b" placeholder="הזן מזהה">
+      </div>
+
+      <div class="form-group">
+        <label>שם פרטי</label>
+        <input type="text" #firstName required [value]="donor?.firstName" placeholder="הזן שם פרטי">
+      </div>
+
+      <div class="form-group">
+        <label>שם משפחה</label>
+        <input type="text" #lastName required [value]="donor?.lastName" placeholder="הזן שם משפחה">
+      </div>
+
+      <div class="form-group">
+        <label>מייל</label>
+        <input type="email" #email required [value]="donor?.email" placeholder="הזן כתובת מייל">
+      </div>
+
+      <div class="form-group">
+        <label>טלפון</label>
+        <input type="text" #phone required [value]="donor?.phone" placeholder="הזן מספר טלפון">
+      </div>
+
+      <button type="submit" class="btn-submit">שלח</button>
+    </form>
+    
+    @if(result){
+      <div class="result-message">{{ result }}</div>
+    }
+  </div>
+</div>

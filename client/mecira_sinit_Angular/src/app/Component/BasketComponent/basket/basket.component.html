@@ -1,0 +1,113 @@
+<div class="basket-page">
+  <h1>הסל שלי</h1>
+  
+  <div class="basket-grid">
+    @if(basket.length==0){
+      <div class="empty-message">הסל שלך ריק</div>
+    }
+    @for(b of basket; track $index) {
+      <div class="basket-card" [class.selected]="isSelected(b.orderId)">
+        <!-- checkbox לבחירת הפריט -->
+        <div class="select-checkbox">
+          <input 
+            type="checkbox" 
+            [checked]="isSelected(b.orderId)"
+            (change)="toggleSelection(b.orderId)"
+            id="item-{{b.orderId}}"
+          />
+          <label for="item-{{b.orderId}}">בחר</label>
+        </div>
+        
+        <img
+          *ngIf="b.image"
+          [src]="'assets/gift-images/' + b.image + '.jpg'"
+          alt="{{ b.image }}"
+          class="basket-image"
+          (error)="onImageError($event)"/>
+        
+        <div class="basket-content">
+          <h3 class="basket-title">{{b.name}}</h3>
+          <p class="basket-desc">{{b.description}}</p>
+          <div class="basket-info">
+            <span class="basket-price">₪{{b.price}}</span>
+            <span class="basket-amount">כמות: {{b.amount}}</span>
+          </div>
+        </div>
+        
+        <div class="basket-actions">
+          <button class="btn-add" (click)="CreateOrderAsync(b.giftId)" title="הוסף">+</button>
+          <button class="btn-remove" (click)="DeleteOrderAsync(b.orderId)" title="הסר">-</button>
+        </div>
+      </div>
+    }
+  </div>
+  
+  <!-- כפתור הזמנה כללי - למטה -->
+  @if(selectedItems.size > 0){
+    <div class="order-all-section">
+      <button class="btn-order-all" (click)="openCheckoutModal()" [disabled]="(doLottery$ | async) === true">
+        🛒 המשך לתשלום ({{ selectedItems.size }} פריטים)
+      </button>
+    </div>
+  }
+  
+  <!-- Modal לתשלום -->
+  @if(showModal){
+    <div class="modal-overlay" (click)="closeModal()">
+      <div class="modal-content" (click)="$event.stopPropagation()">
+        
+        @if(!isOrderComplete){
+          <!-- מסך סיכום ההזמנה -->
+          <div class="modal-header">
+            <h2>סיכום הזמנה</h2>
+            <button class="close-btn" (click)="closeModal()">✕</button>
+          </div>
+          
+          <div class="modal-body">
+            <div class="order-summary">
+              @for(item of getSelectedItems(); track $index){
+                <div class="summary-item">
+                  <img 
+                    *ngIf="item.image"
+                    [src]="'assets/gift-images/' + item.image + '.jpg'"
+                    alt="{{ item.image }}"
+                    class="summary-image"
+                    (error)="onImageError($event)"
+                  />
+                  <div class="summary-details">
+                    <h4>{{item.name}}</h4>
+                    <p>כמות: {{item.amount}} × ₪{{item.price}}</p>
+                  </div>
+                  <div class="summary-price">₪{{item.price * item.amount}}</div>
+                </div>
+              }
+            </div>
+            
+            <div class="total-section">
+              <span class="total-label">סה"כ לתשלום:</span>
+              <span class="total-amount">₪{{getTotalPrice()}}</span>
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <button class="btn-cancel" (click)="closeModal()">ביטול</button>
+            <button class="btn-pay" (click)="completePurchase()">💳 בצע תשלום</button>
+          </div>
+        }
+        
+        @else{
+          <div class="thank-you-section">
+            <div class="success-icon">✓</div>
+            <h2>תודה שקנית אצלנו!</h2>
+            <p>ההזמנה שלך בוצעה בהצלחה</p>
+            <!-- <p class="order-details">סכום ההזמנה: ₪{{getTotalPrice()}}</p> -->
+            <button class="btn-close" (click)="closeModal()">סגור</button>
+          </div>
+        }
+        
+      </div>
+    </div>
+  }
+  
+  <div *ngIf="result" class="basket-confirmation" [@fadeInOut]>{{ result }}</div>
+</div>

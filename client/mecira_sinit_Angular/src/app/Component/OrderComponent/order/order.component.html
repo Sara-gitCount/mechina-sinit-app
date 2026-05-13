@@ -1,0 +1,180 @@
+<div class="page-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>סינון הזמנות</h2>
+    
+    <div class="filter-group">
+      <label>שם מתנה</label>
+      <input placeholder="שם מתנה" type="text" #name>
+      <button (click)="GetGiftsByNameAsync(name.value)">חפש</button>
+    </div>
+    
+    <div class="filter-group">
+      <label>שם תורם</label>
+      <input placeholder="שם תורם" type="text" #donorName>
+      <button (click)="GetGiftsByDonorNameAsync(donorName.value)">חפש</button>
+    </div>
+    
+    <div class="filter-group">
+      <label>מספר קונים</label>
+      <input placeholder="מספר קונים" type="number" #numOfUsers>
+      <button (click)="GetGiftsByNumOfUsersAsync(+numOfUsers.value)">חפש</button>
+    </div>
+    
+    <div class="sidebar-actions">
+      <button (click)="getAllGifts()">הצג כל המתנות</button>
+      <button (click)="GetGiftsOrderByPriceAsync()">מיון לפי מחיר</button>
+      <!-- <button (click)="GetOrderByPrice_CategoryAsync()">מיון לפי מחיר וקטגוריה</button> -->
+      <button (click)="GetGiftsOrderByOrdersAsync()">מיון לפי פופולריות</button>
+      <button (click)="GetOrdersByGiftAsync()">הזמנות לפי מתנה</button>
+      <button (click)="GetAllUsersAsync()">הצג משתמשים</button>
+      <button [routerLink]="['/addGift']">הוסף מתנה</button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <h1>ניהול הזמנות</h1>
+    
+    <!-- a==1: listGift -->
+    @if(a==1 && listGift.length === 0){
+      <div class="empty-message">לא נמצאו מתנות</div>
+    }
+    @if(a==1 && listGift.length > 0){
+      <div class="orders-grid">
+        @for(g of listGift; track $index){
+          <div class="order-card">
+            <img *ngIf="g.image" [src]="'assets/gift-images/' + g.image + '.jpg'" alt="{{ g.image }}" class="order-image" (error)="onImageError($event)"/>
+            <div class="order-content">
+              <h3 class="order-title">{{g.name}}</h3>
+              <p class="order-desc">{{g.description}}</p>
+              <div class="order-footer">
+                <span class="order-price">₪{{g.price}}</span>
+                <span class="order-category">{{g.categoryName}}</span>
+              </div>
+            </div>
+            <div class="order-actions">
+              <button class="btn-edit" [routerLink]="['/updateGift',g.id]">עדכן</button>
+              <button class="btn-delete" (click)="DeleteGiftAsync(g.id)">מחק</button>
+            </div>
+          </div>
+        }
+      </div>
+    }
+    
+    <!-- a==2: listGift_D -->
+    @if(a==2 && listGift_D.length === 0){
+      <div class="empty-message">לא נמצאו מתנות</div>
+    }
+    @if(a==2 && listGift_D.length > 0){
+      <div class="orders-grid">
+        @for(g of listGift_D; track $index){
+          <div class="order-card">
+            <img *ngIf="g.image" [src]="'assets/gift-images/' + g.image + '.jpg'" alt="{{ g.image }}" class="order-image" (error)="onImageError($event)"/>
+            <div class="order-content">
+              <h3 class="order-title">{{g.name}}</h3>
+              <p class="order-desc">{{g.description}}</p>
+              <span class="order-category">קטגוריה: {{g.categoryId}}</span>
+            </div>
+          </div>
+        }
+      </div>
+    }
+    
+    <!-- a==3: donor -->
+    @if(a==3){
+      <div class="single-card">
+        <div class="donor-card">
+          <h3 class="donor-name">{{donor.firstName}} {{donor.lastName}}</h3>
+          <p class="donor-contact">{{donor.phone}} | {{donor.email}}</p>
+          @if(donor.donations.length > 0){
+            <div class="donations-list">
+              <h4>תרומות:</h4>
+              @for(d of donor.donations; track $index){
+                <div class="donation-item">
+                  <strong>{{d.name}}</strong> - {{d.description}}
+                </div>
+              }
+            </div>
+          }
+        </div>
+      </div>
+    }
+    
+    <!-- a==4: gift -->
+    @if(a==4){
+      @if(gift==null){
+        <div class="empty-message">לא נמצאו מתנות</div>
+      }
+      @else{
+        <div class="single-card">
+          <div class="gift-detail-card">
+            <img *ngIf="gift.image" [src]="'assets/gift-images/' + gift.image + '.jpg'" alt="{{ gift.image }}" class="gift-detail-image" (error)="onImageError($event)"/>
+            <div class="gift-detail-content">
+              <h2>{{gift.name}}</h2>
+              <p>{{gift.description}}</p>
+              <div class="gift-detail-footer">
+                <span class="detail-price">₪{{gift.price}}</span>
+                <span class="detail-category">{{gift.categoryName}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    }
+    
+    <!-- a==5: listOrderUsers -->
+    @if(a==5 && listOrderUsers.length === 0){
+      <div class="empty-message">לא נמצאו משתמשים</div>
+    }
+    @if(a==5 && listOrderUsers.length > 0){
+      <div class="users-grid">
+        @for(u of listOrderUsers; track $index){
+          <div class="user-card">
+            <h3>{{u.firstName}} {{u.lastName}}</h3>
+            <p>{{u.email}} | {{u.phone}}</p>
+          </div>
+        }
+      </div>
+    }
+    
+    <!-- a==6: listGiftsUpdate -->
+    @if(a==6 && listGiftsUpdate.length === 0){
+      <div class="empty-message">לא נמצאו מתנות לעדכון</div>
+    }
+    @if(a==6 && listGiftsUpdate.length > 0){
+      <div class="orders-grid">
+        @for(g of listGiftsUpdate; track $index){
+          <div class="order-card">
+            <img *ngIf="g.image" [src]="'assets/gift-images/' + g.image + '.jpg'" alt="{{ g.image }}" class="order-image" (error)="onImageError($event)"/>
+            <div class="order-content">
+              <h3 class="order-title">{{g.name}}</h3>
+              <p class="order-desc">{{g.description}}</p>
+              <span class="order-price">₪{{g.price}}</span>
+            </div>
+          </div>
+        }
+      </div>
+    }
+    
+    <!-- a==7: listGiftOrders -->
+    @if(a==7 && listGiftOrders.length === 0){
+      <div class="empty-message">לא נמצאו הזמנות</div>
+    }
+    @if(a==7 && listGiftOrders.length > 0){
+      <div class="gift-orders-grid">
+        @for(g of listGiftOrders; track $index){
+          <div class="gift-order-card">
+            <h3 class="gift-order-title">{{g.giftName}}</h3>
+            <div class="users-list">
+              <h4>משתמשים:</h4>
+              @for(u of g.users; track $index){
+                <div class="user-item">{{u}}</div>
+              }
+            </div>
+          </div>
+        }
+      </div>
+    }
+  </main>
+</div>

@@ -1,0 +1,135 @@
+<div class="page-layout">
+  <!-- Sidebar - סינון בצד -->
+  <aside class="sidebar">
+    <h2>סינון</h2>
+    
+    <div class="filter-group">
+      <label>חיפוש לפי שם</label>
+      <input placeholder="הזן שם מלא" type="text" #name>
+      <button (click)="getByByName(name.value)">חפש</button>
+    </div>
+    
+    <div class="filter-group">
+      <label>חיפוש לפי מייל</label>
+      <input placeholder="הזן כתובת מייל" type="email" #email>
+      <button (click)="getByByEmail(email.value)">חפש</button>
+    </div>
+    
+    <div class="filter-group">
+      <label>חיפוש לפי מתנה</label>
+      <input placeholder="הזן מספר מתנה" type="text" #gift>
+      <button (click)="getByByGift(gift.value)">חפש</button>
+    </div>
+    
+    <div class="sidebar-actions">
+      <button [routerLink]="['/donorAdd']">הוסף תורם חדש</button>
+      <button (click)="GetAllDonors()">הצג הכל</button>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <h1>המוצרים שלנו</h1>
+    
+    <!-- Donors List -->
+    @if(ifTrue===0){
+      <div class="donors-grid">
+        @for(donor of DonorList; track $index){
+          <div class="donor-card">
+            <div class="donor-header">
+              <h3>{{donor.firstName}} {{donor.lastName}}</h3>
+            </div>
+            
+            <div class="donor-info">
+              <div class="info-row">
+                <span class="icon">✉</span>
+                <span>{{donor.email}}</span>
+              </div>
+              <div class="info-row">
+                <span class="icon">☎</span>
+                <span>{{donor.phone}}</span>
+              </div>
+            </div>
+            
+            @if(donor.donations.length > 0){
+              <div class="donations-section">
+                <h4>תרומות</h4>
+                @for(d of donor.donations; track $index){
+                  <div class="donation-item">
+                    <p class="donation-name">{{d.name}}</p>
+                    <p class="donation-desc">{{d.description}}</p>
+                  </div>
+                }
+              </div>
+            }
+            
+            <div class="card-actions">
+              <button class="btn-action" [routerLink]="['/donorUpdate']" [queryParams]="{name:donor.firstName+' '+donor.lastName}">
+                עריכה
+              </button>
+              <button class="btn-action" (click)="onDelete(donor.firstName,donor.lastName)">
+                מחיקה
+              </button>
+            </div>
+          </div>
+        }
+      </div>
+    }
+
+    <!-- Single Donor View (ifTrue==1) -->
+    @if(ifTrue==1){
+      <div class="single-donor">
+        <div class="donor-card featured">
+          <div class="donor-header">
+            <h3>{{donor.firstName}} {{donor.lastName}}</h3>
+          </div>
+          
+          <div class="donor-info">
+            <div class="info-row">
+              <span class="icon">✉</span>
+              <span>{{donor.email}}</span>
+            </div>
+            <div class="info-row">
+              <span class="icon">☎</span>
+              <span>{{donor.phone}}</span>
+            </div>
+          </div>
+          
+          @if(donor.donations.length > 0){
+            <div class="donations-section">
+              <h4>תרומות</h4>
+              @for(d of donor.donations; track $index){
+                <div class="donation-item">
+                  <p class="donation-name">{{d.name}}</p>
+                  <p class="donation-desc">{{d.description}}</p>
+                </div>
+              }
+            </div>
+          }
+        </div>
+      </div>
+    }
+
+    <!-- Donor by Name (ifTrue==2) -->
+    @if(ifTrue==2){
+      <div class="single-donor">
+        <div class="donor-card featured">
+          <div class="donor-header">
+            <h3>{{donorCreate.firstName}} {{donorCreate.lastName}}</h3>
+          </div>
+          
+          <div class="donor-info">
+            <div class="info-row">
+              <span class="icon">✉</span>
+              <span>{{donorCreate.email}}</span>
+            </div>
+            <div class="info-row">
+              <span class="icon">☎</span>
+              <span>{{donorCreate.phone}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    }
+  </main>
+</div>

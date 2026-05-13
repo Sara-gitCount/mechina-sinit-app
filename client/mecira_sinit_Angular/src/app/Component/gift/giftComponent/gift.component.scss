@@ -1,0 +1,257 @@
+.page-layout {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  direction: rtl;
+//   background: #0f172a;
+}
+
+// Sidebar
+.sidebar {
+  width: 280px;
+  background: #1e293b;
+  padding: 30px 20px;
+  border-left: 2px solid #334155; // ← עובי מסגרת
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+
+  h2 {
+    color: #f1f5f9;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.filter-group {
+  margin-bottom: 25px;
+
+  label {
+    display: block;
+    color: #cbd5e1;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s;
+    background: #0f172a;
+    color: #f1f5f9;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+
+    &:focus {
+      border-color: #fc8181;
+      box-shadow: 0 0 0 3px rgba(252, 129, 129, 0.2);
+    }
+
+    &::placeholder {
+      color: #64748b;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #fc8181 0%, #f56565 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background: linear-gradient(135deg, #f56565 0%, #e53e3e 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(252, 129, 129, 0.4);
+    }
+  }
+}
+
+.sidebar-actions {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #334155;
+
+  button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #fc8181 0%, #f56565 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 12px;
+
+    &:hover {
+      background: linear-gradient(135deg, #f56565 0%, #e53e3e 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(252, 129, 129, 0.4);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// Main Content
+.main-content {
+  flex: 1;
+  padding: 40px;
+  overflow-y: auto;
+
+  h1 {
+    color: #f1f5f9;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.gifts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.gift-card {
+  background: #1e293b;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+  border: 2px solid #334155;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(252, 129, 129, 0.3);
+    border-color: #fc8181;
+  }
+
+  &.featured {
+    border-color: #fc8181;
+    box-shadow: 0 8px 25px rgba(252, 129, 129, 0.3);
+  }
+}
+
+.gift-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.gift-content {
+  padding: 20px;
+}
+
+.gift-title {
+  color: #f1f5f9;
+  font-size: 1.3rem;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.gift-desc {
+  color: #cbd5e1;
+  font-size: 14px;
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+  min-height: 40px;
+}
+
+.gift-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 2px solid #334155;
+}
+
+.gift-price {
+  color: #fc8181;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.gift-category {
+  background: #334155;
+  color: #cbd5e1;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.btn-add-cart {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #fc8181 0%, #f56565 100%);
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background: linear-gradient(135deg, #f56565 0%, #e53e3e 100%);
+  }
+}
+
+.empty-message {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.3rem;
+  padding: 60px 20px;
+  background: #1e293b;
+  border-radius: 16px;
+  border: 2px dashed #334155;
+}
+
+.single-gift {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 240px;
+  }
+
+  .main-content {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-left: none;
+    border-bottom: 2px solid #334155;
+  }
+
+  .gifts-grid {
+    grid-template-columns: 1fr;
+  }
+}

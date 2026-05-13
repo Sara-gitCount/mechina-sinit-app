@@ -1,0 +1,27 @@
+<div class="form-container">
+  <div class="form-card">
+    <h2>התחברות</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      
+      <div class="form-group">
+        <label>מייל</label>
+        <input type="email" formControlName="email" placeholder="הזן כתובת מייל">
+        <div class="error-message" *ngIf="loginForm.get('email')?.touched && loginForm.get('email')?.errors">
+          <div *ngIf="loginForm.get('email')?.errors?.['required']">מייל הוא שדה חובה</div>
+          <div *ngIf="loginForm.get('email')?.errors?.['email']">מייל לא תקין</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>סיסמה</label>
+        <input type="password" formControlName="password" placeholder="הזן סיסמה">
+        <div class="error-message" *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.errors">
+          <div *ngIf="loginForm.get('password')?.errors?.['required']">סיסמא זה שדה חובה</div>
+          <div *ngIf="loginForm.get('password')?.errors?.['minlength']">הסיסמה חייבת להכיל לפחות 6 תווים</div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit" [disabled]="loginForm.invalid">התחבר</button>
+    </form>
+  </div>
+</div>

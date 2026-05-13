@@ -1,0 +1,50 @@
+<div class="form-container">
+  <div class="form-card">
+    <h2>{{ id !== 0 ? 'עדכון מתנה' : 'יצירת מתנה חדשה' }}</h2>
+    
+    <form #giftForm="ngForm" (ngSubmit)="id!=0? UpdateGiftAsync() : CreateGiftAsync()">
+      
+      @if(id===0){
+        <div class="form-group">
+          <label>מזהה תורם</label>
+          <input type="number" [(ngModel)]="gift.donorId" required name="donorId" placeholder="הזן מזהה תורם">
+        </div>
+      }
+      
+      <div class="form-group">
+        <label>שם המתנה</label>
+        <input type="text" [(ngModel)]="gift.name" name="name" placeholder="הזן שם מתנה">
+      </div>
+      
+      <div class="form-group">
+        <label>תיאור</label>
+        <input type="text" [(ngModel)]="gift.description" name="description" placeholder="הזן תיאור">
+      </div>
+      
+      <div class="form-group">
+        <label>תמונה</label>
+        <input type="text" [(ngModel)]="gift.image" name="image" placeholder="שם התמונה (בלי .jpg)">
+        <div class="image-preview">
+          <img [src]="getImagePath()" alt="gift image" />
+          <p class="image-path">{{ getImagePath() }}</p>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label>מחיר</label>
+        <input type="number" #price required [(ngModel)]="gift.price" name="price" placeholder="הזן מחיר">
+      </div>
+      
+      <div class="form-group">
+        <label>מזהה קטגוריה</label>
+        <input type="number" #categoryId required [(ngModel)]="gift.categoryId" name="categoryId" placeholder="הזן מזהה קטגוריה">
+      </div>
+      
+      <button type="submit" class="btn-submit">{{ id !== 0 ? 'עדכן' : 'צור מתנה' }}</button>
+    </form>
+    
+    @if(result){
+      <div class="result-message">{{ result }}</div>
+    }
+  </div>
+</div>

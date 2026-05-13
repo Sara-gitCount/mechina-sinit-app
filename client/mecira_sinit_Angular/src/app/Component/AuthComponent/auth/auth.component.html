@@ -1,0 +1,60 @@
+<div class="form-container">
+  <div class="form-card">
+    <h2>הרשמה</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="Register()">
+      
+      <div class="form-group">
+        <label>שם פרטי</label>
+        <input type="text" formControlName="firstName" placeholder="הזן שם פרטי">
+        <div class="error-message" *ngIf="registerForm.get('firstName')?.invalid && registerForm.get('firstName')?.touched">
+          שם פרטי הוא שדה חובה
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>שם משפחה</label>
+        <input type="text" formControlName="lastName" placeholder="הזן שם משפחה">
+        <div class="error-message" *ngIf="registerForm.get('lastName')?.invalid && registerForm.get('lastName')?.touched">
+          שם משפחה הוא שדה חובה
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>מייל</label>
+        <input type="email" formControlName="email" placeholder="הזן כתובת מייל">
+        <div class="error-message" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.errors">
+          <div *ngIf="registerForm.get('email')?.errors?.['required']">מייל הוא שדה חובה</div>
+          <div *ngIf="registerForm.get('email')?.errors?.['email']">מייל לא תקין</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>טלפון</label>
+        <input type="text" formControlName="phone" placeholder="הזן מספר טלפון" maxlength="10">
+        <div class="error-message" *ngIf="registerForm.get('phone')?.touched && registerForm.get('phone')?.errors">
+          <div *ngIf="registerForm.get('phone')?.errors?.['required']">טלפון הוא שדה חובה</div>
+          <div *ngIf="registerForm.get('phone')?.errors?.['pattern']">מספר טלפון חייב להיות 9-10 ספרות</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>כתובת</label>
+        <input type="text" formControlName="address" placeholder="הזן כתובת">
+        <div class="error-message" *ngIf="registerForm.get('address')?.invalid && registerForm.get('address')?.touched">
+          כתובת היא שדה חובה
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>סיסמה</label>
+        <input type="password" formControlName="password" placeholder="הזן סיסמה">
+        <div class="error-message" *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.errors">
+          <div *ngIf="registerForm.get('password')?.errors?.['required']">סיסמא זה שדה חובה</div>
+          <div *ngIf="registerForm.get('password')?.errors?.['minlength']">הסיסמה חייבת להכיל לפחות 6 תווים</div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit" [disabled]="registerForm.invalid">הרשמה</button>
+    </form>
+  </div>
+</div>

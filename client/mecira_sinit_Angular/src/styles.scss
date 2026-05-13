@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 7px; /* כדי שהתוכן לא יוסתר מתחת ל-navbar */
+  font-family: 'Noto Sans SC', 'Segoe UI', 'Arial', sans-serif;
+  background: #b5d8e4;
+  color: #2d2d2d;
+}
+
+router-outlet {
+  display: block;
+  margin-top: 12em;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+app-root {
+  display: block;
+  min-height: 100vh;
+}
+
+/* Add a modern, clean, trustworthy look for the whole site */
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f7f3e8;
+}
+::-webkit-scrollbar-thumb {
+  background: #eab676;
+  border-radius: 4px;
+}
+
+/* Subtle animation for feedback */
+.fade-in {
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive base font size */
+@media (max-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+h1 {
+  color: rgb(31, 23, 85) !important; 
+ }

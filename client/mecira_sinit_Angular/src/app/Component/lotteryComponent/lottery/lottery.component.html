@@ -1,0 +1,42 @@
+<div class="lottery-container">
+  <div class="lottery-card">
+    <h1>הגרלה</h1>
+    <div class="lottery-actions" *ngIf="onlyForManager()">
+      <button class="btn-lottery" (click)="LotteryAsync()" [disabled]="(doLottery$ | async)">
+        🎲 הפעל הגרלה
+      </button>
+      <button class="btn-revenue" (click)="GetAllRevenueAsync()">
+        💰 קבלת כל ההכנסות
+      </button>
+    </div>
+    
+    @if(result){
+      <div class="result-message">{{ result }}</div>
+    }
+    
+    @if(revenue >= 0){
+      <div class="revenue-box">
+        <h3>הכנסות כוללות</h3>
+        <div class="revenue-amount">₪{{ revenue }}</div>
+      </div>
+    }
+    
+    @if(doLottery$ | async){
+       <!-- && lottery.length > 0 -->
+      <div class="winners-section">
+        <h2>🏆 הזוכים בהגרלה</h2>
+        <div class="winners-grid">
+          @for(w of lottery; track $index){
+            <div class="winner-card">
+              <div class="winner-number">{{ $index + 1 }}</div>
+              <div class="winner-info">
+                <h3>{{ w.giftName }}</h3>
+                <h3>{{ w.userName }}</h3>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>

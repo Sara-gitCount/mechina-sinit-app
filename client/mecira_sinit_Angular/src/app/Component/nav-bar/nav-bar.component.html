@@ -1,0 +1,16 @@
+<nav class="nav">
+  <ul class="nav__links">
+    <li 
+      #navLink
+      *ngFor="let link of navLinks; let i = index"
+      class="nav__link"
+      [class.active]="activeIndex === i"
+      (click)="onLinkClick(i, link.route)">
+      <a>
+        <i class="bx" [ngClass]="link.icon"></i>
+      </a>
+    </li>
+    <div class="nav__light" [style.left.em]="lightPosition"></div>
+  </ul>
+</nav>
+<div class="nav-spacer"></div> <!-- ← הוסיפי שורה זו -->

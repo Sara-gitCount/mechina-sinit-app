@@ -1,0 +1,75 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  margin-top: 21vh;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 10%;
+}
+
+// רספונסיבי - טאבלט
+@media (max-width: 1024px) {
+  .hero-section {
+    margin-top: 70px;
+    height: 90vh;
+  }
+  
+  .background-video {
+    margin-top: 18vh;
+    height: 75%;
+  }
+  
+  .content {
+    padding-top: 12%;
+  }
+}
+
+// רספונסיבי - מובייל גדול
+@media (max-width: 768px) {
+  .hero-section {
+    margin-top: 60px;
+    height: 80vh;
+  }
+  
+  .background-video {
+    margin-top: 15vh;
+    height: 70%;
+  }
+  
+  .content {
+    padding-top: 15%;
+  }
+}
+
+// רספונסיבי - מובייל קטן
+@media (max-width: 480px) {
+  .hero-section {
+    margin-top: 50px;
+    height: 70vh;
+  }
+  
+  .background-video {
+    margin-top: 10vh;
+    height: 65%;
+  }
+  
+  .content {
+    padding-top: 10%;
+  }
+}

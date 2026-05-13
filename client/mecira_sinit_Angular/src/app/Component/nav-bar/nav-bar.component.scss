@@ -1,0 +1,263 @@
+/* ------------ VARIABLES ------------ */
+:root {
+  --tab-color: #191919;
+  --white-color: #fff;
+}
+
+/* ------------ MENU ------------ */
+.nav {
+  background-color: var(--tab-color);
+  width: 100%;
+  max-width: 100vw;
+  height: 10em;
+  border-radius: 0;
+  padding: 0 3em;
+  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.nav__links {
+  display: flex;
+gap: clamp(10em, 6vw, 10em); /* יותר רווח */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  justify-content: center; /* ← חשוב! */
+}
+
+.nav__link {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nav__link a {
+  color: var(--white-color);
+  font-size: 3rem;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+  display: block;
+}
+
+.nav__light {
+  position: absolute;
+  top: -1em; /* מעל האייקונים */
+  background-color: var(--white-color);
+  width: 4em;
+  height: 0.4em;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  transition: left 0.3s ease;
+  pointer-events: none;
+  transform: translateX(-50%); /* ← הוסיפי שורה זו */
+  margin-left: 0em; /* ← הוסיפי שורה זו */
+}
+
+.nav__light::before {
+  content: "";
+  width: 7em;
+  height: 9em;
+  position: absolute;
+  top: 0.4em;
+  left: 50%; /* ← שני מ-0.5em */
+  transform: translateX(-50%); /* ← הוסיפי שורה זו - ממרכז */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.3) -50%,
+    rgba(255, 255, 255, 0) 90%
+  );
+  clip-path: polygon(30% 0, 70% 0, 100% 100%, 0% 100%);
+}
+
+.nav__link.active a {
+  opacity: 1;
+}
+
+/* עבור כל אייקון active */
+.nav__link.active a i {
+  text-shadow: 0 0 15px currentColor, 
+               0 0 30px currentColor,
+               0 0 45px currentColor, 
+               0 0 60px currentColor;
+}
+
+/* Login - תכלת */
+.nav__link.active a .bx-log-in {
+  color: #f5c0c0;
+}
+.nav__link:has(.bx-log-in).active ~ .nav__light {
+  background-color: #f5c0c0;
+}
+
+/* Register - ירוק */
+.nav__link.active a .bx-user-plus {
+  color: #fc8181;
+}
+.nav__link:has(.bx-user-plus).active ~ .nav__light {
+  background-color: #fc8181;
+}
+
+/* Home - ורוד */
+.nav__link.active a .bx-home-heart {
+  color: #f13333;
+}
+.nav__link:has(.bx-home-heart).active ~ .nav__light {
+  background-color: #f13333;
+}
+
+/* Gifts - ורוד כהה */
+.nav__link.active a .bx-gift {
+  color: #913131;
+}
+.nav__link:has(.bx-gift).active ~ .nav__light {
+  background-color: #913131;
+}
+
+/* Basket - כתום */
+.nav__link.active a .bx-cart {
+  color: #ff6347;
+}
+.nav__link:has(.bx-cart).active ~ .nav__light {
+  background-color: #ff6347;
+}
+
+/* Lottery - זהב */
+.nav__link.active a .bx-party {
+  color: #5e83bd;
+}
+.nav__link:has(.bx-party).active ~ .nav__light {
+  background-color: #5e83bd;
+}
+
+/* Orders - סגול */
+.nav__link.active a .bx-list-ol {
+  color: #0b2f6a;
+}
+.nav__link:has(.bx-list-ol).active ~ .nav__light {
+  background-color: #0b2f6a;
+}
+
+/* Donors - ירוק בהיר */
+.nav__link.active a .bx-user-pin {
+  color: #b5d8e4;
+}
+.nav__link:has(.bx-user-pin).active ~ .nav__light {
+  background-color: #b5d8e4;
+}
+
+/* Logout - אדום */
+.nav__link.active a .bx-user-x {
+  color: #ff4444;
+}
+.nav__link:has(.bx-user-x).active ~ .nav__light {
+  background-color: #ff4444;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .nav {
+    height: 9em;
+  }
+  .nav__links {
+    gap: 3em;
+  }
+  .nav__link a {
+    font-size: 2.8rem;
+  }
+  .nav__light {
+    width: 3.5em;
+  }
+  .nav__light::before {
+    width: 6em;
+    height: 8em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    height: 8em;
+  }
+  .nav__links {
+    gap: 2.5em;
+  }
+  .nav__link a {
+    font-size: 2.3rem;
+  }
+  .nav__light {
+    width: 3em;
+  }
+  .nav__light::before {
+    width: 5em;
+    height: 7em;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav {
+    height: 7em;
+  }
+  .nav__links {
+    gap: 2em;
+  }
+  .nav__link a {
+    font-size: 2rem;
+  }
+  .nav__light {
+    width: 2.5em;
+  }
+  .nav__light::before {
+    width: 4em;
+    height: 6em;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    height: 6em;
+    padding: 0 1.5em;
+  }
+  .nav__links {
+    gap: 1.5em;
+  }
+  .nav__link a {
+    font-size: 1.6rem;
+  }
+  .nav__light {
+    width: 2em;
+    height: 0.3em;
+  }
+  .nav__light::before {
+    width: 3.5em;
+    height: 5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav {
+    height: 5em;
+    padding: 0 1em;
+  }
+  .nav__links {
+    gap: 1em;
+  }
+  .nav__link a {
+    font-size: 1.3rem;
+  }
+  .nav__light {
+    width: 1.8em;
+    height: 0.25em;
+  }
+  .nav__light::before {
+    width: 3em;
+    height: 4em;
+  }
+}
