@@ -1,0 +1,151 @@
+2026-01-21 23:10:37.616 +02:00 [INF] Store API nou running {}
+2026-01-21 23:10:40.421 +02:00 [INF] Incoming Request: GET /swagger {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000001","RequestPath":"/swagger","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:40.458 +02:00 [INF] Completed GET /swagger responded 301 in 43ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000001","RequestPath":"/swagger","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:40.560 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000003","RequestPath":"/swagger/index.html","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:40.684 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 123ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000003","RequestPath":"/swagger/index.html","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:40.685 +02:00 [INF] Incoming Request: GET /swagger/swagger-ui.css {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000005","RequestPath":"/swagger/swagger-ui.css","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:40.690 +02:00 [INF] Incoming Request: GET /swagger/swagger-ui-standalone-preset.js {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000009","RequestPath":"/swagger/swagger-ui-standalone-preset.js","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:40.690 +02:00 [INF] Incoming Request: GET /swagger/swagger-ui-bundle.js {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000007","RequestPath":"/swagger/swagger-ui-bundle.js","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:40.839 +02:00 [INF] Completed GET /swagger/swagger-ui.css responded 200 in 153ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000005","RequestPath":"/swagger/swagger-ui.css","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:40.842 +02:00 [INF] Completed GET /swagger/swagger-ui-standalone-preset.js responded 200 in 152ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000009","RequestPath":"/swagger/swagger-ui-standalone-preset.js","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:40.874 +02:00 [INF] Completed GET /swagger/swagger-ui-bundle.js responded 200 in 184ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000007","RequestPath":"/swagger/swagger-ui-bundle.js","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:41.125 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:0000000F","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:41.164 +02:00 [INF] Incoming Request: GET /swagger/favicon-32x32.png {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000011","RequestPath":"/swagger/favicon-32x32.png","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:41.169 +02:00 [INF] Completed GET /swagger/favicon-32x32.png responded 200 in 4ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000011","RequestPath":"/swagger/favicon-32x32.png","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:10:41.279 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 154ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:0000000F","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:11:01.534 +02:00 [INF] Incoming Request: POST /Orders/%20Orders {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000013","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:11:01.769 +02:00 [INF] Completed POST /Orders/%20Orders responded 401 in 235ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000013","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:11:50.114 +02:00 [INF] Incoming Request: POST /login {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000015","RequestPath":"/login","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:11:52.925 +02:00 [ERR] Failed executing DbCommand (139ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Address], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password], [u].[Phone], [u].[Roles]
+FROM [useres] AS [u]
+WHERE [u].[Email] = @__email_0 {"EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command","ActionId":"ef96bd7e-c23a-476d-ada4-861f2f98bac4","ActionName":"WebApplication1.Controllers.AuthController.Login (WebApplication1)","RequestId":"0HNIP663GBVVO:00000015","RequestPath":"/login","ConnectionId":"0HNIP663GBVVO"}
+2026-01-21 23:11:52.993 +02:00 [ERR] An exception occurred while iterating over the results of a query for context type 'WebApplication1.Data.StoreContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Roles'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:9e48be0b-f301-4f2a-b92e-6cfa9a844d50
+Error Number:207,State:1,Class:16 {"EventId":{"Id":10100,"Name":"Microsoft.EntityFrameworkCore.Query.QueryIterationFailed"},"SourceContext":"Microsoft.EntityFrameworkCore.Query","ActionId":"ef96bd7e-c23a-476d-ada4-861f2f98bac4","ActionName":"WebApplication1.Controllers.AuthController.Login (WebApplication1)","RequestId":"0HNIP663GBVVO:00000015","RequestPath":"/login","ConnectionId":"0HNIP663GBVVO"}
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Roles'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:9e48be0b-f301-4f2a-b92e-6cfa9a844d50
+Error Number:207,State:1,Class:16
+2026-01-21 23:11:53.585 +02:00 [ERR] Failed POST /login after 3471ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP663GBVVO:00000015","RequestPath":"/login","ConnectionId":"0HNIP663GBVVO"}
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Roles'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at WebApplication1.Repository.UsersRepository.GetUserByEmailAsync(String email) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Repository\UsersRepository.cs:line 39
+   at WebApplication1.Services.UesrsService.AuthenticateAsync(String email, String password) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Services\UesrsService.cs:line 116
+   at WebApplication1.Controllers.AuthController.Login(LoginRequestDto loginDto) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Controllers\AuthController.cs:line 26
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebApplication1.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Middleware\RequestLoggingMiddleware.cs:line 26
+ClientConnectionId:9e48be0b-f301-4f2a-b92e-6cfa9a844d50
+Error Number:207,State:1,Class:16
+2026-01-21 23:11:53.859 +02:00 [ERR] An unhandled exception has occurred while executing the request. {"EventId":{"Id":1,"Name":"UnhandledException"},"SourceContext":"Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware","RequestId":"0HNIP663GBVVO:00000015","RequestPath":"/login","ConnectionId":"0HNIP663GBVVO"}
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Roles'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at WebApplication1.Repository.UsersRepository.GetUserByEmailAsync(String email) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Repository\UsersRepository.cs:line 39
+   at WebApplication1.Services.UesrsService.AuthenticateAsync(String email, String password) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Services\UesrsService.cs:line 116
+   at WebApplication1.Controllers.AuthController.Login(LoginRequestDto loginDto) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Controllers\AuthController.cs:line 26
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebApplication1.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Middleware\RequestLoggingMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:9e48be0b-f301-4f2a-b92e-6cfa9a844d50
+Error Number:207,State:1,Class:16
+2026-01-21 23:18:56.484 +02:00 [INF] Store API nou running {}
+2026-01-21 23:18:58.519 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:18:58.793 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 282ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:18:59.068 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:18:59.403 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 334ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:19:15.126 +02:00 [INF] Incoming Request: POST /login {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:00000009","RequestPath":"/login","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:19:19.921 +02:00 [INF] Generated JWT token for user 1 {"SourceContext":"WebApplication1.Services.TokenService","ActionId":"30376c3a-5370-4172-9a1b-320e622c23f4","ActionName":"WebApplication1.Controllers.AuthController.Login (WebApplication1)","RequestId":"0HNIP6AO4828N:00000009","RequestPath":"/login","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:19:19.927 +02:00 [INF] User 1 authenticated successfully {"SourceContext":"WebApplication1.Services.UesrsService","ActionId":"30376c3a-5370-4172-9a1b-320e622c23f4","ActionName":"WebApplication1.Controllers.AuthController.Login (WebApplication1)","RequestId":"0HNIP6AO4828N:00000009","RequestPath":"/login","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:19:19.989 +02:00 [INF] Completed POST /login responded 200 in 4862ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:00000009","RequestPath":"/login","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:20:13.201 +02:00 [INF] Incoming Request: POST /Orders/%20Orders {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:0000000B","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:20:13.240 +02:00 [WRN] JWT Authentication failed: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. {"RequestId":"0HNIP6AO4828N:0000000B","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:20:13.275 +02:00 [INF] Completed POST /Orders/%20Orders responded 401 in 79ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:0000000B","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:20:51.143 +02:00 [INF] Incoming Request: POST /Orders/%20Orders {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:0000000D","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:20:51.178 +02:00 [WRN] JWT Authentication failed: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. {"RequestId":"0HNIP6AO4828N:0000000D","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:20:51.186 +02:00 [INF] Completed POST /Orders/%20Orders responded 401 in 43ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:0000000D","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:20:56.600 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:0000000F","RequestPath":"/swagger/index.html","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:20:56.637 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 37ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:0000000F","RequestPath":"/swagger/index.html","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:20:56.827 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:00000015","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:20:56.869 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 41ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:00000015","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:21:43.802 +02:00 [INF] Incoming Request: POST /Orders/%20Orders {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:00000017","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:21:43.850 +02:00 [WRN] JWT Authentication failed: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string. {"RequestId":"0HNIP6AO4828N:00000017","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:21:43.859 +02:00 [INF] Completed POST /Orders/%20Orders responded 401 in 57ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:00000017","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:24:21.526 +02:00 [INF] Incoming Request: POST /Orders/%20Orders {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:00000019","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:24:22.319 +02:00 [INF] Order created successfully for userId 1 and giftId 11. {"SourceContext":"WebApplication1.Services.OrdersService","ActionId":"0d6dfe09-bd56-4062-9b6d-cdbe81aaf008","ActionName":"WebApplication1.Controllers.OrdersController.CreateOrderAsync (WebApplication1)","RequestId":"0HNIP6AO4828N:00000019","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP6AO4828N"}
+2026-01-21 23:24:22.337 +02:00 [INF] Completed POST /Orders/%20Orders responded 200 in 810ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIP6AO4828N:00000019","RequestPath":"/Orders/%20Orders","ConnectionId":"0HNIP6AO4828N"}

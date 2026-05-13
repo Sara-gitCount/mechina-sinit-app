@@ -1,0 +1,370 @@
+2026-01-10 19:56:28.091 +02:00 [INF] Store API nou running {}
+2026-01-10 19:56:29.614 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGE6A83T62:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGE6A83T62"}
+2026-01-10 19:56:29.809 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 202ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGE6A83T62:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGE6A83T62"}
+2026-01-10 19:56:30.034 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGE6A83T62:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGE6A83T62"}
+2026-01-10 19:56:30.231 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 196ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGE6A83T62:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGE6A83T62"}
+2026-01-10 20:03:28.839 +02:00 [INF] Store API nou running {}
+2026-01-10 20:03:30.144 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEA7KGEKV:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGEA7KGEKV"}
+2026-01-10 20:03:30.458 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 320ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEA7KGEKV:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGEA7KGEKV"}
+2026-01-10 20:03:30.622 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEA7KGEKV:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGEA7KGEKV"}
+2026-01-10 20:03:30.815 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 192ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEA7KGEKV:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGEA7KGEKV"}
+2026-01-10 20:07:11.735 +02:00 [INF] Incoming Request: POST /donors/Donors {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEA7KGEKV:00000009","RequestPath":"/donors/Donors","ConnectionId":"0HNIGEA7KGEKV"}
+2026-01-10 20:07:12.269 +02:00 [INF] Completed POST /donors/Donors responded 400 in 534ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEA7KGEKV:00000009","RequestPath":"/donors/Donors","ConnectionId":"0HNIGEA7KGEKV"}
+2026-01-10 20:09:09.174 +02:00 [INF] Store API nou running {}
+2026-01-10 20:09:10.007 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEDD01K34:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGEDD01K34"}
+2026-01-10 20:09:10.087 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 82ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEDD01K34:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGEDD01K34"}
+2026-01-10 20:09:10.200 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEDD01K34:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGEDD01K34"}
+2026-01-10 20:09:10.289 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 88ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEDD01K34:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGEDD01K34"}
+-----2026-01-10 20:09:23.924 +02:00 [INF] Store API nou running {}
+2026-01-10 20:09:24.624 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEDHCU096:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGEDHCU096"}
+2026-01-10 20:09:24.701 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 80ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEDHCU096:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGEDHCU096"}
+2026-01-10 20:09:24.798 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEDHCU096:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGEDHCU096"}
+2026-01-10 20:09:24.883 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 84ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEDHCU096:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGEDHCU096"}
+2026-01-10 20:10:11.469 +02:00 [INF] Incoming Request: POST /donors/Donors {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEDHCU096:00000009","RequestPath":"/donors/Donors","ConnectionId":"0HNIGEDHCU096"}
+2026-01-10 20:10:12.582 +02:00 [INF] Completed POST /donors/Donors responded 400 in 1112ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEDHCU096:00000009","RequestPath":"/donors/Donors","ConnectionId":"0HNIGEDHCU096"}
+2026-01-10 20:19:53.521 +02:00 [INF] Store API nou running {}
+2026-01-10 20:19:54.682 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEJD23DJH:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGEJD23DJH"}
+2026-01-10 20:19:54.851 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 176ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEJD23DJH:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGEJD23DJH"}
+2026-01-10 20:19:54.960 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEJD23DJH:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGEJD23DJH"}
+2026-01-10 20:19:55.133 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 172ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEJD23DJH:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGEJD23DJH"}
+2026-01-10 20:21:17.233 +02:00 [INF] Store API nou running {}
+2026-01-10 20:21:18.498 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEK62E3GV:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGEK62E3GV"}
+2026-01-10 20:21:18.699 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 209ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEK62E3GV:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGEK62E3GV"}
+2026-01-10 20:21:18.831 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEK62E3GV:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGEK62E3GV"}
+2026-01-10 20:21:19.056 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 224ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEK62E3GV:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGEK62E3GV"}
+2026-01-10 20:21:59.248 +02:00 [INF] Incoming Request: POST /donors/Donors {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEK62E3GV:00000009","RequestPath":"/donors/Donors","ConnectionId":"0HNIGEK62E3GV"}
+2026-01-10 20:22:00.452 +02:00 [INF] Completed POST /donors/Donors responded 400 in 1203ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEK62E3GV:00000009","RequestPath":"/donors/Donors","ConnectionId":"0HNIGEK62E3GV"}
+2026-01-10 20:29:17.497 +02:00 [INF] Store API nou running {}
+2026-01-10 20:29:18.504 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEOL56P1E:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGEOL56P1E"}
+2026-01-10 20:29:18.595 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 96ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEOL56P1E:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGEOL56P1E"}
+2026-01-10 20:29:18.702 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEOL56P1E:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGEOL56P1E"}
+2026-01-10 20:29:18.839 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 137ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEOL56P1E:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGEOL56P1E"}
+2026-01-10 20:29:52.130 +02:00 [INF] Incoming Request: POST /donors/Donors {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEOL56P1E:00000009","RequestPath":"/donors/Donors","ConnectionId":"0HNIGEOL56P1E"}
+2026-01-10 20:29:53.434 +02:00 [INF] Donor created {"SourceContext":"WebApplication1.Services.DonorsService","ActionId":"d3f81104-619c-4e07-853d-1f9ad8acd4af","ActionName":"WebApplication1.Controllers.DonorsController.CreateDonorAsync (WebApplication1)","RequestId":"0HNIGEOL56P1E:00000009","RequestPath":"/donors/Donors","ConnectionId":"0HNIGEOL56P1E"}
+2026-01-10 20:29:53.445 +02:00 [INF] Completed POST /donors/Donors responded 200 in 1315ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGEOL56P1E:00000009","RequestPath":"/donors/Donors","ConnectionId":"0HNIGEOL56P1E"}
+2026-01-10 23:13:37.549 +02:00 [INF] Store API nou running {}
+2026-01-10 23:13:39.139 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:13:39.328 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 196ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:13:39.454 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:13:39.628 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 174ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:19:39.874 +02:00 [INF] Incoming Request: POST /register {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:00000009","RequestPath":"/register","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:19:40.168 +02:00 [WRN] JWT Authentication failed: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'. {"RequestId":"0HNIGHKFOHRA9:00000009","RequestPath":"/register","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:19:43.528 +02:00 [ERR] Failed executing DbCommand (129ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [useres] ([Id], [Address], [Email], [FirstName], [LastName], [Password], [Phone])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); {"EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command","ActionId":"822aabe2-0c20-4c5f-a6c3-198dce7c3685","ActionName":"WebApplication1.Controllers.AuthController.Register (WebApplication1)","RequestId":"0HNIGHKFOHRA9:00000009","RequestPath":"/register","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:19:43.595 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'WebApplication1.Data.StoreContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'useres' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:edd61d7d-1df8-4d44-a042-e54781683c66
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) {"EventId":{"Id":10000,"Name":"Microsoft.EntityFrameworkCore.Update.SaveChangesFailed"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"822aabe2-0c20-4c5f-a6c3-198dce7c3685","ActionName":"WebApplication1.Controllers.AuthController.Register (WebApplication1)","RequestId":"0HNIGHKFOHRA9:00000009","RequestPath":"/register","ConnectionId":"0HNIGHKFOHRA9"}
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'useres' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:edd61d7d-1df8-4d44-a042-e54781683c66
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-01-10 23:19:44.181 +02:00 [ERR] Failed POST /register after 4307ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:00000009","RequestPath":"/register","ConnectionId":"0HNIGHKFOHRA9"}
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'useres' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:edd61d7d-1df8-4d44-a042-e54781683c66
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at WebApplication1.Repository.UsersRepository.CreateUserAsync(Useres user) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Repository\UsersRepository.cs:line 18
+   at WebApplication1.Services.UesrsService.CreateUserAsync(Useres user) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Services\UesrsService.cs:line 45
+   at WebApplication1.Controllers.AuthController.Register(Useres user) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Controllers\AuthController.cs:line 41
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebApplication1.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Middleware\RequestLoggingMiddleware.cs:line 26
+2026-01-10 23:19:44.419 +02:00 [ERR] An unhandled exception has occurred while executing the request. {"EventId":{"Id":1,"Name":"UnhandledException"},"SourceContext":"Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware","RequestId":"0HNIGHKFOHRA9:00000009","RequestPath":"/register","ConnectionId":"0HNIGHKFOHRA9"}
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'useres' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:edd61d7d-1df8-4d44-a042-e54781683c66
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at WebApplication1.Repository.UsersRepository.CreateUserAsync(Useres user) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Repository\UsersRepository.cs:line 18
+   at WebApplication1.Services.UesrsService.CreateUserAsync(Useres user) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Services\UesrsService.cs:line 45
+   at WebApplication1.Controllers.AuthController.Register(Useres user) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Controllers\AuthController.cs:line 41
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebApplication1.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Middleware\RequestLoggingMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-10 23:21:51.375 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:0000000B","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:21:51.383 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 8ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:0000000B","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:21:51.518 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:00000011","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:21:51.550 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 32ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:00000011","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:21:51.567 +02:00 [INF] Incoming Request: GET /swagger/favicon-32x32.png {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:00000013","RequestPath":"/swagger/favicon-32x32.png","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:21:51.585 +02:00 [INF] Completed GET /swagger/favicon-32x32.png responded 200 in 17ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:00000013","RequestPath":"/swagger/favicon-32x32.png","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:23:27.628 +02:00 [INF] Incoming Request: POST /register {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:00000015","RequestPath":"/register","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:23:27.793 +02:00 [ERR] Failed executing DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [useres] ([Id], [Address], [Email], [FirstName], [LastName], [Password], [Phone])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); {"EventId":{"Id":20102,"Name":"Microsoft.EntityFrameworkCore.Database.Command.CommandError"},"SourceContext":"Microsoft.EntityFrameworkCore.Database.Command","ActionId":"822aabe2-0c20-4c5f-a6c3-198dce7c3685","ActionName":"WebApplication1.Controllers.AuthController.Register (WebApplication1)","RequestId":"0HNIGHKFOHRA9:00000015","RequestPath":"/register","ConnectionId":"0HNIGHKFOHRA9"}
+2026-01-10 23:23:27.802 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'WebApplication1.Data.StoreContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'useres' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:edd61d7d-1df8-4d44-a042-e54781683c66
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) {"EventId":{"Id":10000,"Name":"Microsoft.EntityFrameworkCore.Update.SaveChangesFailed"},"SourceContext":"Microsoft.EntityFrameworkCore.Update","ActionId":"822aabe2-0c20-4c5f-a6c3-198dce7c3685","ActionName":"WebApplication1.Controllers.AuthController.Register (WebApplication1)","RequestId":"0HNIGHKFOHRA9:00000015","RequestPath":"/register","ConnectionId":"0HNIGHKFOHRA9"}
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'useres' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:edd61d7d-1df8-4d44-a042-e54781683c66
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-01-10 23:23:28.235 +02:00 [ERR] Failed POST /register after 608ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGHKFOHRA9:00000015","RequestPath":"/register","ConnectionId":"0HNIGHKFOHRA9"}
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'useres' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:edd61d7d-1df8-4d44-a042-e54781683c66
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at WebApplication1.Repository.UsersRepository.CreateUserAsync(Useres user) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Repository\UsersRepository.cs:line 18
+   at WebApplication1.Services.UesrsService.CreateUserAsync(Useres user) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Services\UesrsService.cs:line 45
+   at WebApplication1.Controllers.AuthController.Register(Useres user) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Controllers\AuthController.cs:line 41
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebApplication1.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Middleware\RequestLoggingMiddleware.cs:line 26
+2026-01-10 23:23:28.405 +02:00 [ERR] An unhandled exception has occurred while executing the request. {"EventId":{"Id":1,"Name":"UnhandledException"},"SourceContext":"Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware","RequestId":"0HNIGHKFOHRA9:00000015","RequestPath":"/register","ConnectionId":"0HNIGHKFOHRA9"}
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'useres' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:edd61d7d-1df8-4d44-a042-e54781683c66
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at WebApplication1.Repository.UsersRepository.CreateUserAsync(Useres user) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Repository\UsersRepository.cs:line 18
+   at WebApplication1.Services.UesrsService.CreateUserAsync(Useres user) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Services\UesrsService.cs:line 45
+   at WebApplication1.Controllers.AuthController.Register(Useres user) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Controllers\AuthController.cs:line 41
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at WebApplication1.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in C:\Users\user1\Desktop\mechiraSinit\api\WebApplication1\WebApplication1\Middleware\RequestLoggingMiddleware.cs:line 26
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-01-10 23:43:23.526 +02:00 [INF] Store API nou running {}
+2026-01-10 23:43:25.608 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI540DN6R:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:43:25.773 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 173ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI540DN6R:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:43:25.882 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI540DN6R:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:43:26.097 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 214ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI540DN6R:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:44:10.024 +02:00 [INF] Incoming Request: POST /register {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI540DN6R:00000009","RequestPath":"/register","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:44:13.299 +02:00 [INF] User created {"SourceContext":"WebApplication1.Services.UesrsService","ActionId":"369c20d5-6f9c-4606-ad71-b9d2c7110893","ActionName":"WebApplication1.Controllers.AuthController.Register (WebApplication1)","RequestId":"0HNIGI540DN6R:00000009","RequestPath":"/register","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:44:13.387 +02:00 [INF] Completed POST /register responded 201 in 3362ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI540DN6R:00000009","RequestPath":"/register","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:46:18.020 +02:00 [INF] Incoming Request: POST /login {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI540DN6R:0000000B","RequestPath":"/login","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:46:18.069 +02:00 [WRN] JWT Authentication failed: IDX14120: JWT is not well formed, there is only one dot (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'. {"RequestId":"0HNIGI540DN6R:0000000B","RequestPath":"/login","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:46:18.428 +02:00 [INF] Generated JWT token for user 1 {"SourceContext":"WebApplication1.Services.TokenService","ActionId":"680a675a-c7c4-472a-988f-98c638f17216","ActionName":"WebApplication1.Controllers.AuthController.Login (WebApplication1)","RequestId":"0HNIGI540DN6R:0000000B","RequestPath":"/login","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:46:18.433 +02:00 [INF] User 1 authenticated successfully {"SourceContext":"WebApplication1.Services.UesrsService","ActionId":"680a675a-c7c4-472a-988f-98c638f17216","ActionName":"WebApplication1.Controllers.AuthController.Login (WebApplication1)","RequestId":"0HNIGI540DN6R:0000000B","RequestPath":"/login","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:46:18.451 +02:00 [INF] Completed POST /login responded 200 in 431ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI540DN6R:0000000B","RequestPath":"/login","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:47:01.044 +02:00 [INF] Incoming Request: GET /1 {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI540DN6R:0000000D","RequestPath":"/1","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:47:01.071 +02:00 [WRN] JWT Authentication failed: IDX14120: JWT is not well formed, there is only one dot (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'. {"RequestId":"0HNIGI540DN6R:0000000D","RequestPath":"/1","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:47:01.241 +02:00 [INF] Completed GET /1 responded 200 in 197ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI540DN6R:0000000D","RequestPath":"/1","ConnectionId":"0HNIGI540DN6R"}
+2026-01-10 23:47:54.132 +02:00 [INF] Store API nou running {}
+2026-01-10 23:47:55.499 +02:00 [INF] Incoming Request: GET /swagger/index.html {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI7KI4MNU:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGI7KI4MNU"}
+2026-01-10 23:47:55.648 +02:00 [INF] Completed GET /swagger/index.html responded 200 in 157ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI7KI4MNU:00000001","RequestPath":"/swagger/index.html","ConnectionId":"0HNIGI7KI4MNU"}
+2026-01-10 23:47:55.768 +02:00 [INF] Incoming Request: GET /swagger/v1/swagger.json {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI7KI4MNU:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGI7KI4MNU"}
+2026-01-10 23:47:55.949 +02:00 [INF] Completed GET /swagger/v1/swagger.json responded 200 in 180ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI7KI4MNU:00000007","RequestPath":"/swagger/v1/swagger.json","ConnectionId":"0HNIGI7KI4MNU"}
+2026-01-10 23:48:29.809 +02:00 [INF] Incoming Request: POST /register {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI7KI4MNU:00000009","RequestPath":"/register","ConnectionId":"0HNIGI7KI4MNU"}
+2026-01-10 23:48:32.867 +02:00 [INF] Completed POST /register responded 400 in 3057ms {"SourceContext":"WebApplication1.Middleware.RequestLoggingMiddleware","RequestId":"0HNIGI7KI4MNU:00000009","RequestPath":"/register","ConnectionId":"0HNIGI7KI4MNU"}

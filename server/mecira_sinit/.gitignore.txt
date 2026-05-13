@@ -1,0 +1,52 @@
+﻿# ========================
+# Build Folders
+# ========================
+bin/
+obj/
+Debug/
+Release/
+
+# ========================
+# User-specific files
+# ========================
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/
+
+# ========================
+# Logs
+# ========================
+*.log
+
+# ========================
+# Visual Studio temporary files
+# ========================
+*.tmp
+*.temp
+*.cache
+
+# ========================
+# NuGet Packages
+# ========================
+*.nupkg
+packages/
+*.snupkg
+
+# ========================
+# EF / Database
+# ========================
+appsettings.Development.json
+*.db
+*.mdf
+*.ldf
+
+# ========================
+# Other OS files
+# ========================
+.DS_Store
+Thumbs.db
+appsettings.json
+appsettings.Development.json
+.gitignore.txt
